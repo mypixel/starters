@@ -1,4 +1,4 @@
-#Starter files for React JS / Webpack / SASS
+# Starter files for React JS / Webpack / SASS
 
 Tweaked by MyPixel (to include SASS complie and watch) and bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
