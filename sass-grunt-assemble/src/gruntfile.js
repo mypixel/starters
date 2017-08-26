@@ -54,9 +54,7 @@ module.exports = function(grunt) {
 
 		// compile your sass
 		sass: {
-			options: {
-					compass: true,
-			},
+			options: {},
 			dev: {
 				options: {
 					style: 'expanded',
