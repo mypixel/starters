@@ -1,0 +1,32 @@
+/* #Layout
+================================================== */
+
+*{
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* #Page Styles
+================================================== */
+
+
+.wrap{
+	
+	@include cf();
+	max-width: 92%;
+	margin: 0 auto;
+	transition: transform 100ms ease-in-out;
+
+	@include breakpoint( 'tablet' ){
+		max-width: 80%;
+	}
+
+	@include breakpoint( 'wide' ){
+		max-width: 120rem; // = 1200px @ 10px
+	}
+}

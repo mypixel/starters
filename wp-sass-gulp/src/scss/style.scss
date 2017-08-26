@@ -1,0 +1,17 @@
+/**
+Theme Name: WP Starter  Gulp
+Theme URI: 
+Description: Custom Wordpress theme starter
+Author: Blake // myPixel
+Author URI: http://mypixel.co.nz
+Version: 1
+*/
+
+@import 'normalise';
+
+@import 'grid';
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+@import 'navigation';
+@import 'layout';

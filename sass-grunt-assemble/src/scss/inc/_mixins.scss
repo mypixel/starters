@@ -1,0 +1,41 @@
+// mixins and helpers
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+
+%cf {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin mq($point) {
+	@if $point == wide {
+		@media (min-width: 1400px) { @content; }
+	}
+	@if $point == desktop {
+		@media (min-width: 1024px) { @content; }
+	}
+	@else if $point == tablet {
+		@media (min-width: 768px) { @content; }
+	}
+	@else if $point == phablet  {
+		@media (min-width: 680px)  { @content; }
+	}
+	@else if $point == phone  {
+		@media (min-width: 480px)  { @content; }
+	}
+}

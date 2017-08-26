@@ -1,0 +1,83 @@
+html,
+body{
+	font-size: $rem;
+	font-family: $sans;
+	color: white;
+	line-height: 1.4;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+
+	margin: 0.25em 0 .1em;
+	line-height: 1.2;
+	font-weight: normal;
+	font-size: 1.8*$rem;
+	color: $brand;
+	font-family: $sans;
+
+	@media( max-width: 800px){
+		font-size: 1.6*$rem;
+	}
+}
+
+h1{
+	font-size: 5.6*$rem;
+
+	@media( max-width: 800px){
+		font-size: 4.2*$rem;
+	}
+}
+h2{
+	font-size: 2.5*$rem;
+
+	@media( max-width: 800px){
+		font-size: 2.0*$rem;
+	}
+
+	.col &{
+		font-weight: normal;
+		font-size: 2*$rem;
+	}
+}
+h3{
+	font-size: 1.6*$rem;
+	
+
+	@media( max-width: 800px){
+		font-size: 1.4*$rem;
+	}
+}
+h4{
+	font-size: 2*$rem;
+	font-family: $sans;
+
+	@media( max-width: 800px){
+		font-size: 1.6*$rem;
+	}
+}
+
+em{
+	font-family: $serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+p{
+	font-size: 1.4*$rem;
+	margin: 0 0 0.9em 0;
+	line-height: 1.4;	
+	color: $dark;
+
+	@media( max-width: 800px){
+		font-size: 1.4*$rem;
+	}
+}
+
+a{
+	text-decoration: none;
+	color: $brand;
+	&:hover{
+		color: $brand;
+	}
+}
